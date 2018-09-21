@@ -43,7 +43,7 @@ factorial(3); */
 } */
 
 //Switch statement
-function getLetters(s) {
+/* function getLetters(s) {
     let letter;
     let firstLetter = s.charAt(0);
     let label1 = ('a'&& 'e'&& 'i'&& 'o'&& 'u');
@@ -69,4 +69,21 @@ function getLetters(s) {
     }
     return letter;
 }
-getLetters('mguhbdfgt');
+getLetters('mguhbdfgt'); */
+
+//Loops
+function vowelsAndConsonants(s){
+    let vowels = 'aeiou';
+    let consonants = '';
+
+    for (let i = 0; i < s.length; i++) {
+        if(vowels.includes(s[i])){
+            console.log(s[i]);
+        }else{
+            consonants += s[i] + '\n';
+        }
+    }
+    console.log(consonants.trim());
+}
+
+vowelsAndConsonants('javascriptloops');
