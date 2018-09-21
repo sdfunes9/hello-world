@@ -89,7 +89,7 @@ getLetters('mguhbdfgt'); */
 vowelsAndConsonants('javascriptloops'); */
 
 //Arrays
-function secondLargest(arr) {
+/* function secondLargest(arr) {
     arr.sort((x,y) => {return y-x});
     let result;
     for (let i = 0; i < arr.length; i++) {
@@ -103,4 +103,20 @@ function secondLargest(arr) {
 }
 
 nums = [2,3,6,6,5,7,8,10];
-secondLargest(nums);
+secondLargest(nums); */
+
+//Try, catch and finally
+function reverseString(s) {
+    try {
+        let splitString = s.split("");
+        let inverted = splitString.reverse();
+        let joined = inverted.join('');
+        console.log(joined);        
+    } catch (error) {
+        console.log(error.message);
+        console.log(s);
+    }
+    
+}
+
+reverseString(1234);
